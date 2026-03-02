@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ROUTES } from "./routes";
 import Home from "../components/Home/Home";
-import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass";
-import SCSSMasterclass from "../components/SCSSMasterclass/SCSSMasterClass";
-import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass";
-import HTMLCSSMasterclass from "../components/CSSMasterclass/HTMLCSSMasterClass";
+import SCSSMasterclass from "../components/SCSSMasterclass/SCSSMasterclass.jsx";
+import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass.jsx";
+import HTMLCSSMasterclass from "../components/CSSMasterclass/HTMLCSSMasterclass.jsx";
+import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
+
 
 const AppRoutes = () => {
   return (

@@ -4,7 +4,7 @@ import { ROUTES } from "./routes";
 import Home from "../components/Home/Home";
 import SCSSMasterclass from "../components/SCSSMasterclass/SCSSMasterclass.jsx";
 import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass.jsx";
-import HTMLCSSMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.jsx";
+import HTMLMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.jsx";
 import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
 
 const AppRoutes = () => {
@@ -12,7 +12,7 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.HTML_CSS_PAGE} element={<HTMLCSSMasterclass />} />
+        <Route path={ROUTES.HTML_CSS_PAGE} element={<HTMLMasterclass />} />
         <Route path={ROUTES.CSS_PAGE} element={<CSSMasterclass />} />
         <Route path={ROUTES.SCSS_PAGE} element={<SCSSMasterclass />} />
         <Route

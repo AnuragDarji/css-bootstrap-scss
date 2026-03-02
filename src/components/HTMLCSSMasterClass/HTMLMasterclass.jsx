@@ -3927,7 +3927,7 @@ p { color: blue !important; }
 ];
 
 /* ══ MAIN COMPONENT ══════════════════════════════════════════ */
-export default function HTMLCSSMasterclass() {
+export default function HTMLMasterclass() {
   const [darkMode, setDarkMode] = useState(true);
   const [activeId, setActiveId] = useState("intro");
   const [search, setSearch] = useState("");

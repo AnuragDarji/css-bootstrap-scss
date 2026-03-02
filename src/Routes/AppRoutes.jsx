@@ -4,9 +4,8 @@ import { ROUTES } from "./routes";
 import Home from "../components/Home/Home";
 import SCSSMasterclass from "../components/SCSSMasterclass/SCSSMasterclass.jsx";
 import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass.jsx";
-import HTMLCSSMasterclass from "../components/HTMLCSSMasterClass/HTMLCSSMasterClass.js";
+import HTMLCSSMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.jsx";
 import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
-
 
 const AppRoutes = () => {
   return (

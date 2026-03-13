@@ -7,7 +7,7 @@ import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass.jsx";
 import HTMLMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.jsx";
 import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
 import MongoDBMasterclass from "../components/MongoDBMasterclass/MongoDBMasterclass.jsx";
-import MongoDBMasterclass from "../components/ReactMasterclass/ReactMasterclass.jsx";
+import ReactMasterclass from "../components/ReactMasterclass/ReactMasterclass.jsx";
 
 const AppRoutes = () => {
   return (

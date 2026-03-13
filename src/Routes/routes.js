@@ -4,5 +4,6 @@ export const ROUTES = {
     SCSS_PAGE: "/scss-master-class",
     BOOTSTRAP_PAGE: "/bootstrap-master-class",
     HTML_CSS_PAGE: "/html-css-master-class",
-    MONGO_PAGE: "/mongo-master"
+    MONGO_PAGE: "/mongo-master",
+    REACT_PAGE: "/react-page"
 }

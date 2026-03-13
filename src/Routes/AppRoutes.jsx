@@ -7,6 +7,7 @@ import CSSMasterclass from "../components/CSSMasterclass/CSSMasterclass.jsx";
 import HTMLMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.jsx";
 import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
 import MongoDBMasterclass from "../components/MongoDBMasterclass/MongoDBMasterclass.jsx";
+import MongoDBMasterclass from "../components/ReactMasterclass/ReactMasterclass.jsx";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,10 @@ const AppRoutes = () => {
         <Route
           path={ROUTES.MONGO_PAGE}
           element={<MongoDBMasterclass />}
+        />
+        <Route
+          path={ROUTES.REACT_PAGE}
+          element={<ReactMasterclass />}
         />
       </Routes>
     </BrowserRouter>

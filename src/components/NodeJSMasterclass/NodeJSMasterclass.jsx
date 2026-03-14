@@ -210,10 +210,7 @@ function SLabel({ children, color }) {
 
 /* ══ DEMO 1 — Event Loop ═══════════════════════════════ */
 function IntroDemo({ t }) {
-  const [step, setStep] = useState(-1);
-  const [running, setRunning] = useState(false);
   const [view, setView] = useState("loop");
-  const timerRef = useRef(null);
 
   const steps = [
     {
@@ -253,23 +250,6 @@ function IntroDemo({ t }) {
       desc: "Response sent. Loop keeps spinning — ready for the next request without creating a new thread.",
     },
   ];
-
-  const runAnim = () => {
-    if (running) return;
-    setRunning(true);
-    setStep(-1);
-    let i = 0;
-    timerRef.current = setInterval(() => {
-      if (i >= steps.length) {
-        clearInterval(timerRef.current);
-        setRunning(false);
-        setStep(-1);
-        return;
-      }
-      setStep(i++);
-    }, 3000);
-  };
-  useEffect(() => () => clearInterval(timerRef.current), []);
 
   return (
     <div
@@ -319,25 +299,6 @@ function IntroDemo({ t }) {
       {view === "loop" ? (
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
           <div style={{ flex: "1 1 200px" }}>
-            <button
-              onClick={runAnim}
-              disabled={running}
-              style={{
-                width: "100%",
-                background: running
-                  ? t.surface
-                  : `linear-gradient(135deg,${t.accent},#15803d)`,
-                border: "none",
-                borderRadius: 8,
-                padding: "10px",
-                color: running ? t.muted : "#000",
-                fontWeight: 800,
-                cursor: running ? "not-allowed" : "pointer",
-                marginBottom: 12,
-              }}
-            >
-              {running ? "⏳ Running…" : "▶ Animate Event Loop"}
-            </button>
             {steps.map((s, i) => (
               <div
                 key={i}
@@ -347,14 +308,8 @@ function IntroDemo({ t }) {
                   padding: "8px 10px",
                   borderRadius: 8,
                   marginBottom: 4,
-                  background:
-                    step === i
-                      ? `${s.color}25`
-                      : step > i
-                        ? `${t.accent}08`
-                        : "transparent",
-                  border: `1px solid ${step === i ? `${s.color}70` : step > i ? `${t.accent}20` : "transparent"}`,
-                  transition: "all .4s",
+                  background: `${s.color}18`,
+                  border: `1px solid ${s.color}55`,
                 }}
               >
                 <span style={{ fontSize: "1rem", flexShrink: 0 }}>
@@ -363,25 +318,23 @@ function IntroDemo({ t }) {
                 <div>
                   <div
                     style={{
-                      color: step >= i ? s.color : t.muted,
+                      color: s.color,
                       fontWeight: 700,
                       fontSize: "0.8rem",
                     }}
                   >
                     {s.label}
                   </div>
-                  {step === i && (
-                    <div
-                      style={{
-                        color: t.muted,
-                        fontSize: "0.72rem",
-                        marginTop: 2,
-                        lineHeight: 1.5,
-                      }}
-                    >
-                      {s.desc}
-                    </div>
-                  )}
+                  <div
+                    style={{
+                      color: t.muted,
+                      fontSize: "0.72rem",
+                      marginTop: 2,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    {s.desc}
+                  </div>
                 </div>
               </div>
             ))}

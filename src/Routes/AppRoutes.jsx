@@ -8,6 +8,7 @@ import HTMLMasterclass from "../components/HTMLCSSMasterClass/HTMLMasterclass.js
 import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMasterclass.jsx";
 import MongoDBMasterclass from "../components/MongoDBMasterclass/MongoDBMasterclass.jsx";
 import ReactMasterclass from "../components/ReactMasterclass/ReactMasterclass.jsx";
+import NodeJSMasterclass from "../components/NodeJSMasterclass/NodeJSMasterclass.jsx";
 
 const AppRoutes = () => {
   return (
@@ -28,6 +29,10 @@ const AppRoutes = () => {
         <Route
           path={ROUTES.REACT_PAGE}
           element={<ReactMasterclass />}
+        />
+        <Route
+          path={ROUTES.NODE_PAGE}
+          element={<NodeJSMasterclass />}
         />
       </Routes>
     </BrowserRouter>

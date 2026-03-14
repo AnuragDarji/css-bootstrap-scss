@@ -5,5 +5,6 @@ export const ROUTES = {
     BOOTSTRAP_PAGE: "/bootstrap-master-class",
     HTML_CSS_PAGE: "/html-css-master-class",
     MONGO_PAGE: "/mongo-master",
-    REACT_PAGE: "/react-page"
+    REACT_PAGE: "/react-page",
+    NODE_PAGE: "/node-page",
 }

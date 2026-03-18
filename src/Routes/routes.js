@@ -6,5 +6,6 @@ export const ROUTES = {
     HTML_CSS_PAGE: "/html-css-master-class",
     MONGO_PAGE: "/mongo-master",
     REACT_PAGE: "/react-page",
-    NODE_PAGE: "/node-page"
+    NODE_PAGE: "/node-page",
+    NEXT_PAGE: "next-page"
 }

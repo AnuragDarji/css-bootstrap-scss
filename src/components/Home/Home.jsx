@@ -7,7 +7,7 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiNextdotjs } from "react-icons/si";
 
 import "./Home.css";
 import { ROUTES } from "../../Routes/routes";
@@ -47,6 +47,13 @@ const Home = () => {
       path: ROUTES.REACT_PAGE,
       icon: <FaReact />,
       color: "#61DBFB",
+      description: "Build modern and dynamic web applications using React",
+    },
+    {
+      name: "Next Masterclass",
+      path: ROUTES.NEXT_PAGE,
+      icon: <SiNextdotjs />,
+      color: "#0e0d16",
       description: "Build modern and dynamic web applications using React",
     },
     {

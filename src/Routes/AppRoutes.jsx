@@ -9,6 +9,7 @@ import BootstrapMasterclass from "../components/BootstrapMasterclass/BootstrapMa
 import MongoDBMasterclass from "../components/MongoDBMasterclass/MongoDBMasterclass.jsx";
 import ReactMasterclass from "../components/ReactMasterclass/ReactMasterclass.jsx";
 import NodeJSMasterclass from "../components/NodeJSMasterclass/NodeJSMasterclass.jsx";
+import NextJSMasterclass from "../components/NextJSMasterclass/NextJSMasterclass.jsx";
 
 const AppRoutes = () => {
   return (
@@ -33,6 +34,10 @@ const AppRoutes = () => {
         <Route
           path={ROUTES.NODE_PAGE}
           element={<NodeJSMasterclass />}
+        />
+        <Route
+          path={ROUTES.NEXT_PAGE}
+          element={<NextJSMasterclass />}
         />
       </Routes>
     </BrowserRouter>
